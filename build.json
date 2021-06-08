@@ -13,15 +13,18 @@
 	"targets": {
 		"example-sharedlib": {
 			"type": "Chalet",
-			"location": "${external}/example-sharedlib"
+			"location": "${external}/example-sharedlib",
+			"buildFile": "build.json"
 		},
 		"example-mono": {
 			"type": "Chalet",
-			"location": "${external}/example-mono"
+			"location": "${external}/example-mono",
+			"recheck": false
 		},
 		"example-sfml": {
 			"type": "Chalet",
-			"location": "${external}/example-sfml"
+			"location": "${external}/example-sfml",
+			"recheck": false
 		}
 	},
 	"externalDependencies": {
