@@ -1,0 +1,38 @@
+{
+	"version": "0.0.1",
+	"workspace": "chalet-examples",
+	"path": [],
+	"externalDepDir": "chalet_external",
+	"abstracts:all": {
+		"language": "C++",
+		"settings:Cxx": {
+			"cppStandard": "c++17",
+			"warnings": "pedantic"
+		}
+	},
+	"targets": {
+		"example-sharedlib": {
+			"type": "Chalet",
+			"location": "${external}/example-sharedlib"
+		},
+		"example-mono": {
+			"type": "Chalet",
+			"location": "${external}/example-mono"
+		},
+		"example-sfml": {
+			"type": "Chalet",
+			"location": "${external}/example-sfml"
+		}
+	},
+	"externalDependencies": {
+		"example-sharedlib": {
+			"repository": "git@github.com:chalet-org/chalet-example-sharedlib.git"
+		},
+		"example-mono": {
+			"repository": "git@github.com:chalet-org/chalet-example-mono.git"
+		},
+		"example-sfml": {
+			"repository": "git@github.com:chalet-org/chalet-example-sfml.git"
+		}
+	}
+}
