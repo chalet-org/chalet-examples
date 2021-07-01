@@ -13,7 +13,7 @@
 		"example-sharedlib": {
 			"type": "Chalet",
 			"location": "${external}/example-sharedlib",
-			"buildFile": "build.json"
+			"buildFile": "chalet.json"
 		},
 		"example-mono": {
 			"type": "Chalet",
