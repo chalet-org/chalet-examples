@@ -1,7 +1,6 @@
 {
 	"version": "0.0.1",
 	"workspace": "chalet-examples",
-	"externalDepDir": "chalet_external",
 	"abstracts:all": {
 		"language": "C++",
 		"settings:Cxx": {
@@ -12,17 +11,17 @@
 	"targets": {
 		"example-sharedlib": {
 			"type": "Chalet",
-			"location": "${external}/example-sharedlib",
+			"location": "${externalDir}/example-sharedlib",
 			"buildFile": "chalet.json"
 		},
 		"example-mono": {
 			"type": "Chalet",
-			"location": "${external}/example-mono",
+			"location": "${externalDir}/example-mono",
 			"recheck": false
 		},
 		"example-sfml": {
 			"type": "Chalet",
-			"location": "${external}/example-sfml",
+			"location": "${externalDir}/example-sfml",
 			"recheck": false
 		}
 	},
