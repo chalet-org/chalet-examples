@@ -10,17 +10,17 @@
 	},
 	"targets": {
 		"example-sharedlib": {
-			"type": "Chalet",
+			"kind": "chaletProject",
 			"location": "${externalDir}/example-sharedlib",
 			"buildFile": "chalet.json"
 		},
 		"example-mono": {
-			"type": "Chalet",
+			"kind": "chaletProject",
 			"location": "${externalDir}/example-mono",
 			"recheck": false
 		},
 		"example-sfml": {
-			"type": "Chalet",
+			"kind": "chaletProject",
 			"location": "${externalDir}/example-sfml",
 			"recheck": false
 		}
