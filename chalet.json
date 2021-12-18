@@ -12,17 +12,20 @@
 		"example-sharedlib": {
 			"kind": "chaletProject",
 			"location": "${externalDir}/example-sharedlib",
-			"buildFile": "chalet.json"
+			"buildFile": "chalet.json",
+			"rebuild": false
 		},
 		"example-mono": {
 			"kind": "chaletProject",
 			"location": "${externalDir}/example-mono",
-			"recheck": false
+			"recheck": false,
+			"rebuild": false
 		},
 		"example-sfml": {
 			"kind": "chaletProject",
 			"location": "${externalDir}/example-sfml",
-			"recheck": false
+			"recheck": false,
+			"rebuild": false
 		}
 	},
 	"externalDependencies": {
