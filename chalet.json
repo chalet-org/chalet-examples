@@ -9,10 +9,10 @@
 		}
 	},
 	"targets": {
-		"example-sharedlib": {
+		"example-metadata": {
 			"kind": "chaletProject",
-			"location": "${externalDir}/example-sharedlib",
-			"buildFile": "chalet.json",
+			"location": "${externalDir}/example-metadata",
+			"recheck": false,
 			"rebuild": false
 		},
 		"example-mono": {
@@ -26,17 +26,26 @@
 			"location": "${externalDir}/example-sfml",
 			"recheck": false,
 			"rebuild": false
+		},
+		"example-sharedlib": {
+			"kind": "chaletProject",
+			"location": "${externalDir}/example-sharedlib",
+			"buildFile": "chalet.json",
+			"rebuild": false
 		}
 	},
 	"externalDependencies": {
-		"example-sharedlib": {
-			"repository": "git@github.com:chalet-org/chalet-example-sharedlib.git"
+		"example-metadata": {
+			"repository": "git@github.com:chalet-org/chalet-example-metadata.git"
 		},
 		"example-mono": {
 			"repository": "git@github.com:chalet-org/chalet-example-mono.git"
 		},
 		"example-sfml": {
 			"repository": "git@github.com:chalet-org/chalet-example-sfml.git"
+		},
+		"example-sharedlib": {
+			"repository": "git@github.com:chalet-org/chalet-example-sharedlib.git"
 		}
 	}
 }
