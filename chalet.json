@@ -1,6 +1,6 @@
 {
 	"version": "0.0.1",
-	"workspace": "chalet-examples",
+	"name": "chalet-examples",
 	"abstracts:*": {
 		"language": "C++",
 		"settings:Cxx": {
