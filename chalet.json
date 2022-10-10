@@ -1,39 +1,6 @@
 {
 	"version": "0.0.1",
 	"name": "chalet-examples",
-	"abstracts:*": {
-		"language": "C++",
-		"settings:Cxx": {
-			"cppStandard": "c++17",
-			"warningsPreset": "pedantic"
-		}
-	},
-	"targets": {
-		"example-metadata": {
-			"kind": "chaletProject",
-			"location": "${externalDir}/example-metadata",
-			"recheck": false,
-			"rebuild": false
-		},
-		"example-mono": {
-			"kind": "chaletProject",
-			"location": "${externalDir}/example-mono",
-			"recheck": false,
-			"rebuild": false
-		},
-		"example-sfml": {
-			"kind": "chaletProject",
-			"location": "${externalDir}/example-sfml",
-			"recheck": false,
-			"rebuild": false
-		},
-		"example-sharedlib": {
-			"kind": "chaletProject",
-			"location": "${externalDir}/example-sharedlib",
-			"buildFile": "chalet.json",
-			"rebuild": false
-		}
-	},
 	"externalDependencies": {
 		"example-metadata": {
 			"repository": "git@github.com:chalet-org/chalet-example-metadata.git"
@@ -46,6 +13,39 @@
 		},
 		"example-sharedlib": {
 			"repository": "git@github.com:chalet-org/chalet-example-sharedlib.git"
+		}
+	},
+	"abstracts:*": {
+		"language": "C++",
+		"settings:Cxx": {
+			"cppStandard": "c++17",
+			"warningsPreset": "pedantic"
+		}
+	},
+	"targets": {
+		"example-metadata": {
+			"kind": "chaletProject",
+			"location": "${external:example-metadata}",
+			"recheck": false,
+			"rebuild": false
+		},
+		"example-mono": {
+			"kind": "chaletProject",
+			"location": "${external:example-mono}",
+			"recheck": false,
+			"rebuild": false
+		},
+		"example-sfml": {
+			"kind": "chaletProject",
+			"location": "${external:example-sfml}",
+			"recheck": false,
+			"rebuild": false
+		},
+		"example-sharedlib": {
+			"kind": "chaletProject",
+			"location": "${external:example-sharedlib}",
+			"buildFile": "chalet.json",
+			"rebuild": false
 		}
 	}
 }
