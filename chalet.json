@@ -6,13 +6,10 @@
 			"kind": "git",
 			"repository": "git@github.com:chalet-org/chalet-example-metadata.git"
 		},
-		"example-mono": {
-			"kind": "git",
-			"repository": "git@github.com:chalet-org/chalet-example-mono.git"
-		},
 		"example-sfml": {
 			"kind": "git",
-			"repository": "git@github.com:chalet-org/chalet-example-sfml.git"
+			"repository": "git@github.com:chalet-org/chalet-example-sfml.git",
+			"branch": "v0.6.x"
 		},
 		"example-sharedlib": {
 			"kind": "git",
@@ -30,24 +27,28 @@
 		"example-metadata": {
 			"kind": "chaletProject",
 			"location": "${external:example-metadata}",
-			"recheck": false,
-			"rebuild": false
-		},
-		"example-mono": {
-			"kind": "chaletProject",
-			"location": "${external:example-mono}",
+			"targets": [
+				"project-a",
+				"project-b"
+			],
 			"recheck": false,
 			"rebuild": false
 		},
 		"example-sfml": {
 			"kind": "chaletProject",
 			"location": "${external:example-sfml}",
+			"targets":[
+				"sfml-app"
+			],
 			"recheck": false,
 			"rebuild": false
 		},
 		"example-sharedlib": {
 			"kind": "chaletProject",
 			"location": "${external:example-sharedlib}",
+			"targets": [
+				"shared-fibonacci-test"
+			],
 			"buildFile": "chalet.json",
 			"rebuild": false
 		}
