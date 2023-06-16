@@ -3,15 +3,19 @@
 	"name": "chalet-examples",
 	"externalDependencies": {
 		"example-metadata": {
+			"kind": "git",
 			"repository": "git@github.com:chalet-org/chalet-example-metadata.git"
 		},
 		"example-mono": {
+			"kind": "git",
 			"repository": "git@github.com:chalet-org/chalet-example-mono.git"
 		},
 		"example-sfml": {
+			"kind": "git",
 			"repository": "git@github.com:chalet-org/chalet-example-sfml.git"
 		},
 		"example-sharedlib": {
+			"kind": "git",
 			"repository": "git@github.com:chalet-org/chalet-example-sharedlib.git"
 		}
 	},
