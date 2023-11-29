@@ -8,8 +8,7 @@
 		},
 		"example-sfml": {
 			"kind": "git",
-			"repository": "git@github.com:chalet-org/chalet-example-sfml.git",
-			"branch": "v0.6.x"
+			"repository": "git@github.com:chalet-org/chalet-example-sfml.git"
 		},
 		"example-sharedlib": {
 			"kind": "git",
@@ -30,18 +29,14 @@
 			"targets": [
 				"project-a",
 				"project-b"
-			],
-			"recheck": false,
-			"rebuild": false
+			]
 		},
 		"example-sfml": {
 			"kind": "chaletProject",
 			"location": "${external:example-sfml}",
 			"targets":[
 				"sfml-app"
-			],
-			"recheck": false,
-			"rebuild": false
+			]
 		},
 		"example-sharedlib": {
 			"kind": "chaletProject",
@@ -49,8 +44,7 @@
 			"targets": [
 				"shared-fibonacci-test"
 			],
-			"buildFile": "chalet.json",
-			"rebuild": false
+			"buildFile": "chalet.json"
 		}
 	}
 }
