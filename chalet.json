@@ -15,13 +15,6 @@
 			"repository": "git@github.com:chalet-org/chalet-example-sharedlib.git"
 		}
 	},
-	"abstracts:*": {
-		"language": "C++",
-		"settings:Cxx": {
-			"cppStandard": "c++17",
-			"warningsPreset": "pedantic"
-		}
-	},
 	"targets": {
 		"example-metadata": {
 			"kind": "chaletProject",
